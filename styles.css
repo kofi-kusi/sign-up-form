@@ -1,3 +1,48 @@
 * {
     box-sizing: border-box;
 }
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.img-section {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: 180px;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: my-cool-font;
+    src: url(./Norse-Bold.otf);
+  }
+
+.overlay-text {
+    font-family: my-cool-font, sans-serif;
+    color: white;
+    font-size: 130px;
+}
+
+img[src*="unsplash"] {
+    width: inherit;
+    height: inherit;
+}
+
+.form-section {
+    width: 60vw;
+    height: 100vh;
+}
