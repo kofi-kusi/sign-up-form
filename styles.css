@@ -1,10 +1,16 @@
 * {
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --tree-color: #596D48;
 }
 
 .container {
     display: flex;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .img-section {
@@ -25,6 +31,15 @@
     padding: 20px;
 }
 
+div.credits {
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    bottom: 15px;
+    color: whitesmoke;
+
+}
+
 @font-face {
     font-family: my-cool-font;
     src: url(./Norse-Bold.otf);
@@ -42,6 +57,86 @@ img[src*="unsplash"] {
 }
 
 .form-section {
+    display: flex;
+    flex-direction: column;
     width: 60vw;
     height: 100vh;
+    background-color: rgb(247, 247, 247);
+}
+
+.first {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px;
+    padding-top: 70px;
+}
+
+form {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+fieldset {
+    display: flex;
+    border: none;
+    align-content: center;
+    gap: 100px;
+}
+
+label {
+    display: block;
+    letter-spacing: 0.2em;
+    font-size: x-small;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 6px; /* Spacing inside the input */
+    outline: none; /* Remove default outline on focus */
+  }
+  
+input:focus {
+    border-color: blue;
+    box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.1); /* More prominent shadow on focus */
+}
+  
+#password:invalid{
+    border-color: red;
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.1);
+}
+
+.left-side > div{
+    margin-top: 20px;
+}
+
+.right-side > div{
+    margin-top: 20px;
+}
+
+span.cool {
+    color: var(--tree-color);
+    font-weight: bold;
+}
+
+.last {
+    padding: 30px;
+}
+
+button[type="submit"] {
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: var(--tree-color);
 }

@@ -14,6 +14,9 @@
                 <img src="./odin-lined.png" alt="odin-logo">
                 <span class="overlay-text">ODIN</span>
             </div>
+            <div class="credits">
+                Photo by: Helie West on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" style="color: white;">unsplash</a> 
+            </div>
         </div>
 
         <div class="form-section">
@@ -37,7 +40,8 @@
                             </div>
                             <div>
                                 <label for="password">PASSWORD</label>
-                                <input type="password" name="user_password" id="password" required>
+                                <input type="password" name="user_password" id="password" minlength="8" required>
+                                <small style="color: red; display: block;">*passwords do not match</small>
                             </div>
                         </div>
                         <div class="right-side">
@@ -51,13 +55,13 @@
                             </div>
                             <div>
                                 <label for="password">CONFIRM PASSWORD</label>
-                                <input type="password" name="user_password" id="password" required>
+                                <input type="password" name="user_password" id="password" minlength="8" required>
                             </div>
                         </div>
                     </fieldset>
                 </form>
             <div>
-            <div class="info">
+            <div class="last">
                 <button type="submit" class="cool">Create Account</button>
                 <p>Already have an acount? <span class="cool">Log in</span></p>
             </div>
